@@ -4,6 +4,6 @@
 
 <p>{{ username }}</p>
 
-<p *ngIf="username !== ''" (click)="onResetUser()"> <button>Reset User Button 2</button></p>
+<p *ngIf="username !== ''" (click)="username=''"> <button>Reset User Button 2</button></p>
 
 <button [disabled]="username === ''" (click)="onResetUser()">Reset User</button>

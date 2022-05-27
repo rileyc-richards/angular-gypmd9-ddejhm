@@ -1,5 +1,9 @@
 <p>Enter Username:</p>
 
-<input type="text" class="form-control" [(ngModel)]="userName" />
+<input type="text" class="form-control" [(ngModel)]="username">
 
-<p>{{ userName }}</p>
+<p>{{ username }}</p>
+
+<p *ngIf="username !== ''" (click)="onResetUser()"> <button>Reset User Button 2</button></p>
+
+<button [disabled]="username === ''" (click)="onResetUser()">Reset User</button>

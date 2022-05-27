@@ -11,5 +11,11 @@ export class TestComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  userName = '';
+
+  username='';
+
+  onResetUser(){
+    this.username='';
+  }
+
 }
